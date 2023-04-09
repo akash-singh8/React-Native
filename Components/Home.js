@@ -118,7 +118,7 @@ const Home = () => {
         <View style={{ marginTop: 34 }}>
           <Text style={styles.titleText}>Today plan</Text>
 
-          <ScrollView style={{ height: "34%" }}>
+          <ScrollView style={{ height: "45%" }}>
             <View style={styles.planBox}>
               <Image
                 source={require("../assets/Images/Home/running.png")}
@@ -137,7 +137,7 @@ const Home = () => {
                 </View>
               </View>
             </View>
-            <View style={styles.planBox}>
+            <View style={[styles.planBox, { paddingBottom: "29%" }]}>
               <Image
                 source={require("../assets/Images/Home/yoga-warmup.png")}
                 style={styles.planImage}
@@ -165,6 +165,7 @@ const Home = () => {
 const styles = StyleSheet.create({
   home: {
     flex: 1,
+    backgroundColor: "#fff",
   },
 
   header: {
@@ -237,7 +238,7 @@ const styles = StyleSheet.create({
   planBox: {
     flexDirection: "row",
     columnGap: 20,
-    marginBottom: 18,
+    marginBottom: 22,
   },
 
   planImage: {

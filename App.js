@@ -1,7 +1,8 @@
 import * as Font from "expo-font";
 import { useEffect, useState } from "react";
+import { NavigationContainer } from "@react-navigation/native";
 
-import Home from "./Components/Home.js";
+import BottomTabNav from "./Components/BottomTabNav.js";
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -22,9 +23,9 @@ export default function App() {
 
   return (
     fontLoaded && (
-      <>
-        <Home />
-      </>
+      <NavigationContainer>
+        <BottomTabNav />
+      </NavigationContainer>
     )
   );
 }
